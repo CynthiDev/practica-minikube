@@ -1,0 +1,4 @@
+# Dockerfile
+FROM php:fpm-alpine
+RUN mkdir -p /var/www/html
+COPY --chown=nobody src/ /var/www/html/
